@@ -1,0 +1,90 @@
+/* components/Task.css */
+.task-container {
+  width: 100%;
+  cursor: grab;
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+  color: var(--font-color);
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.task-description {
+  font-size: 13.5px;
+  color: var(--font-color);
+}
+
+.task-separator {
+  width: 100%;
+  border-top: 1px dashed var(--font-color);
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.task-deadline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.task-deadline-text {
+  font-size: 13px;
+  color: var(--font-color);
+}
+
+/* Add styles for trash icon */
+.task-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.task-actions .fa-trash {
+  color: var(--font-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.task-actions .fa-trash:hover {
+  color: red;
+}
+
+/* Add styles for "Assigned to" text */
+.task-assigned-to {
+  font-size: 14px;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.task-assigned-to-member {
+  font-size: 14px;
+  color: var(--font-color);
+  font-weight: 500;
+  background-color: rgb(198, 198, 198);
+  border-radius: 8px;
+  padding: 8px;
+}

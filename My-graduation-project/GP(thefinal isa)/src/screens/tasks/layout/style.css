@@ -1,0 +1,38 @@
+/* Layout Styles */
+.layout-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-content {
+  padding-left: 250px;
+  padding-right: 20px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #2e2e2e;
+  border-bottom: 1px solid #444;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+
+.theme-toggle-button:hover {
+  color: #007bff;
+}

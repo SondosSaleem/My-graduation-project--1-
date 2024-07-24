@@ -1,0 +1,53 @@
+/* pages/Boards/Boards.css */
+.board-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 0 20px 40px;
+	gap: 50px;
+	overflow-x: auto;
+}
+
+.column {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.column-content {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	gap: 20px;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.column-header {
+	width: 100%;
+	padding: 10px 0;
+	background: var(--secondary-color);
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	color: var(--font-color);
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.add-task {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	padding: 10px;
+	width: 100%;
+	background: var(--secondary-color);
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	color: var(--font-color);
+	font-weight: 500;
+	font-size: 15px;
+	cursor: pointer;
+}

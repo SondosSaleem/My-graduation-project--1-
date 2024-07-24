@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--xl-text-color);
+}
+
+.color-predict {
+  color: var(--xl-text-color);
+  margin-top: 20px;
+}
+
+.form {
+  display: inline-block;
+  text-align: left;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container input,
+.input-container select {
+  width: 300px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  font-size: 16px;
+}
+
+.input-container input::placeholder,
+.input-container select {
+  color: #b0b0b0;
+}
+
+/* Remove arrows in number input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}

@@ -1,0 +1,92 @@
+/* DemoApp.css */
+
+.app {
+  display: flex;
+}
+
+.app.light {
+  background-color: var(--background-color);
+  color: var(--base-text-color);
+}
+
+.app.dark {
+  background-color: var(--background-color);
+  color: var(--base-text-color);
+}
+
+.calendar-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.calendar-container .fc .fc-toolbar-title {
+  color: var(--text-color-inverted);
+}
+
+.calendar-container .fc .fc-daygrid-event {
+  background-color: var(--bg-color-inverted);
+  color: var(--text-color-inverted);
+  padding: 10px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal.light {
+  background-color: var(--background-color);
+  color: var(--base-text-color);
+  border: 1px solid var(--border-color-inverted);
+}
+
+.modal.dark {
+  background-color: var(--background-color);
+  color: var(--base-text-color);
+  border: 1px solid var(--border-color-inverted);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--toggle-btn-bg-color);
+  color: var(--base-text-color);
+}
+
+button:hover {
+  background-color: var(--toggle-btn-icon-color);
+}
+
+.add-event-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-event-button:hover {
+  background-color: #0056b3;
+}
